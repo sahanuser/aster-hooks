@@ -10,7 +10,7 @@ Lsb_release() {
         echo "DISTRIB_CODENAME=rolling" >> $file
     fi
     sed -i $file \
-        -e 's|^DISTRIB_ID=.*$|DISTRIB_ID=AssterLinux|' \
+        -e 's|^DISTRIB_ID=.*$|DISTRIB_ID=AsterLinux|' \
         -e 's|^DISTRIB_CODENAME=.*$|DISTRIB_CODENAME=rolling|' \
         -e 's|^DISTRIB_DESCRIPTION=.*$|DISTRIB_DESCRIPTION=\"Aster Linux\"|'
 }
