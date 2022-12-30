@@ -2,8 +2,6 @@
 
 git add .
 
-echo "Commit Message"
-read input
 
-git commit -m "$input"
+git commit -m "Update to aster Linux hooks pkg "
 git push

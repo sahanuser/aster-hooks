@@ -2,7 +2,7 @@
 
 pkgname=aster-hooks
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc='Aster Linux pacman hooks'
 arch=('any')
 license=('GPL3')
