@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = linux-zen
+
+[Action]
+Description = Update Grub.
+When = PostTransaction
+Exec = grub-mkconfig -o /boot/grub/grub.cfg

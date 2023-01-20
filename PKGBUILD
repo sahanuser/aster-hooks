@@ -16,13 +16,15 @@ source=(
   asl-hooks-runner
   asl-reboot-required
   asl-reboot-required.hook
+  grub-update.hook
 )
 sha512sums=('SKIP'
 	    'SKIP'
 	    'SKIP'
             'SKIP'
             'SKIP'
-            'SKIP')
+            'SKIP'
+	    'SKIP')
 package() {
   local hooks=$pkgdir/usr/share/libalpm/hooks
   local bin=$pkgdir/usr/bin
@@ -33,4 +35,5 @@ package() {
   install -Dm644 asl-reboot-required.hook  $hooks/asl-reboot-required.hook
   install -Dm755 asl-reboot-required       $bin/asl-reboot-required
   install -Dm755 asl-hooks-runner         $bin/asl-hooks-runner
+  install -Dm644 grub-update.hook           $hooks/grub-update.hook
 }
