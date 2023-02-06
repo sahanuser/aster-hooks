@@ -2,9 +2,9 @@
 Operation = Install
 Operation = Upgrade
 Type = Package
-Target = linux-zen grub
+Target = grub
 
 [Action]
 Description = Update Grub.
 When = PostTransaction
-Exec = grub-mkconfig -o /boot/grub/grub.cfg
+Exec = /bin/fish -c "grub-mkconfig -o /boot/grub/grub.cfg"
