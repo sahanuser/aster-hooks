@@ -7,4 +7,4 @@ Target = aster-hooks
 [Action]
 Description = Updation Aster Linux hooks
 When = PostTransaction
-Exec = /usr/bin/asl-hooks-runner
+Exec = /usr/bin/aster-hooks-runner

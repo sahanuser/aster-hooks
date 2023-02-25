@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = grub
+
+[Action]
+Description = Update Grub.
+When = PostTransaction
+Exec = /bin/fish -c "grub-mkconfig -o /boot/grub/grub.cfg"

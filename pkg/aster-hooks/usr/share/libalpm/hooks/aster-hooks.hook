@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = aster-hooks
+
+[Action]
+Description = Updation Aster Linux hooks
+When = PostTransaction
+Exec = /usr/bin/aster-hooks-runner

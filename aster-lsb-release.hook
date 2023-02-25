@@ -7,4 +7,4 @@ Target = lsb-release
 [Action]
 Description = Aster Linux Configuration.
 When = PostTransaction
-Exec = /usr/bin/asl-hooks-runner lsb-release
+Exec = /usr/bin/aster-hooks-runner lsb-release

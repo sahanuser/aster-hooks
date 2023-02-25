@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = plymouth
+Target = plymouth-theme-space
+[Action]
+Description = Update Plymouth theme
+When = PostTransaction
+Exec = /bin/fish -c "sudo plymouth-set-default-theme -R"

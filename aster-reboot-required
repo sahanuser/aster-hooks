@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# To be called from asl-reboot-required.hook.
+# To be called from aster-reboot-required.hook.
 
 # Implementation using libnotify.
 

@@ -34,4 +34,4 @@ Description = Check if user should be informed about rebooting after certain sys
 When = PostTransaction
 Depends = libnotify
 NeedsTargets
-Exec = /usr/bin/asl-reboot-required
+Exec = /usr/bin/aster-reboot-required
